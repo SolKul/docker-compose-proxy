@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
-RUN echo $HTTP_PROXY
-# ここでプロキシのURL:PORTが表示されたら成功
+# If the proxy is properly written in the .env file, 
+# following apt-get update will succeed
+# RUN apt-get update
 CMD ["/bin/bash"]

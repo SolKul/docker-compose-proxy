@@ -22,6 +22,5 @@ services:
       - ftp_proxy=$ftp_proxy
       - NO_PROXY=$NO_PROXY
       - no_proxy=$no_proxy
-    # 検証のため、標準入出力をオン
+    # alocate a pseudo-TTY to the container to keep it running.
     tty: true
-    stdin_open: true
